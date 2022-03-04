@@ -1,0 +1,186 @@
+main {
+  width: 100%;
+  max-width: 400px;
+  min-width: 375px;
+  height: -webkit-max-content;
+  height: -moz-max-content;
+  height: max-content;
+  margin: 0 auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+main .logo-frame img {
+  margin: 1rem 1.5rem;
+  height: 2.5rem;
+}
+
+main .description {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  background: #ffe6e6;
+}
+
+main .description h1 {
+  width: 250px;
+  color: #f96262;
+  font-size: 3rem;
+  font-weight: 300;
+  text-align: center;
+}
+
+main .description h1 span {
+  color: #000;
+  font-weight: 600;
+}
+
+main .description p {
+  width: 80%;
+  max-width: 400px;
+  color: #f96262;
+  text-align: center;
+  margin-bottom: 3rem;
+}
+
+main .description .email-frame {
+  margin-bottom: 3rem;
+  width: 20rem;
+  height: 3rem;
+  border: 1px #f96262 solid;
+  border-radius: 20rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+main .description .email-frame input {
+  width: 14rem;
+  height: 2.5rem;
+  border-radius: 20rem;
+  border: none;
+  background: #ffe6e6;
+  font-family: 'Josefin Sans', sans-serif;
+  padding-left: 1rem;
+  color: #d87979;
+  font-size: 1rem;
+}
+
+main .description .email-frame input:focus {
+  outline: none;
+}
+
+main .description .email-frame .btn {
+  width: 5rem;
+  height: 3.2rem;
+  border-radius: 3rem;
+  background: linear-gradient(135deg, #f8bfbf, #ee8c8c);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  cursor: pointer;
+}
+
+main .description .email-frame .btn img {
+  height: 60%;
+}
+
+@media (min-width: 1100px) {
+  main {
+    width: 100%;
+    max-width: 1440px;
+    height: -webkit-max-content;
+    height: -moz-max-content;
+    height: max-content;
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 1.5fr 1fr;
+        grid-template-columns: 1.5fr 1fr;
+    -ms-grid-rows: 1fr 5fr;
+        grid-template-rows: 1fr 5fr;
+        grid-template-areas: 'logo picture' 'description picture';
+  }
+  main .logo-frame {
+    -ms-grid-row: 1;
+    -ms-grid-column: 1;
+    grid-area: logo;
+    background: #ffe6e6;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    padding-left: 2rem;
+  }
+  main .main-picture {
+    -ms-grid-row: 1;
+    -ms-grid-row-span: 2;
+    -ms-grid-column: 2;
+    grid-area: picture;
+    z-index: 100;
+  }
+  main .description {
+    -ms-grid-row: 2;
+    -ms-grid-column: 1;
+    grid-area: description;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+  }
+  main .description h1 {
+    font-size: 5rem;
+  }
+  main .description p {
+    font-size: 1.5rem;
+  }
+  main .description .email-frame {
+    width: 25rem;
+    height: 5rem;
+  }
+  main .description .email-frame input {
+    height: 4.5rem;
+    font-size: 1.4rem;
+  }
+  main .description .email-frame .btn {
+    width: 6rem;
+    height: 5rem;
+  }
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Josefin Sans', sans-serif;
+}
+/*# sourceMappingURL=main.css.map */
